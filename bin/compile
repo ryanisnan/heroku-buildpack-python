@@ -31,6 +31,9 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
+# Make a symlink from $BUILD_DIR/.apt to /app/.apt
+ln -s $BUILD_DIR/.apt /app/.apt
+
 # Python defaults
 DEFAULT_PYTHON_VERSION="python-3.6.2"
 DEFAULT_PYTHON_STACK="cedar-14"
